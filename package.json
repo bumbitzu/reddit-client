@@ -1,5 +1,6 @@
 {
   "name": "reddit-client",
+  "homepage":"https://bumbitzu.ro/projects/mini-reddit/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
