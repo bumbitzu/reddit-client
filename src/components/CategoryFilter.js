@@ -1,6 +1,5 @@
-// src/components/CategoryFilter.js
 import React from 'react';
-import './CategoryFilter.css'; // Importing the CSS for styling
+import './CategoryFilter.css'; 
 
 function CategoryFilter({ onCategoryChange })
 {
@@ -17,7 +16,7 @@ function CategoryFilter({ onCategoryChange })
         <option value="news">News</option>
         <option value="sports">Sports</option>
         <option value="entertainment">Entertainment</option>
-        {/* Add more categories as needed */}
+        {/*TODO: Add more categories */}
       </select>
     </div>
   );

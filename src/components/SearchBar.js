@@ -1,6 +1,5 @@
-// src/components/SearchBar.js
 import React, { useState } from 'react';
-import './SearchBar.css'; // Importing the CSS for styling
+import './SearchBar.css';
 
 function SearchBar({ onSearch })
 {

@@ -1,5 +1,5 @@
 // src/redux/reducers.js
-import { SEARCH_POSTS_BEGIN, SEARCH_POSTS_SUCCESS, SEARCH_POSTS_FAILURE, FETCH_POSTS_BEGIN, FETCH_POSTS_SUCCESS, FETCH_POSTS_FAILURE, SET_CATEGORY_FILTER } from './actions';
+import { SEARCH_POSTS_BEGIN, SEARCH_POSTS_SUCCESS, SEARCH_POSTS_FAILURE, FETCH_POSTS_BEGIN, FETCH_POSTS_SUCCESS, FETCH_POSTS_FAILURE } from './actions';
 
 const initialState = {
   items: [],
@@ -30,11 +30,6 @@ export default function postsReducer(state = initialState, action)
         loading: false,
         error: action.payload.error,
         items: []
-      };
-    case SET_CATEGORY_FILTER:
-      return {
-        ...state,
-        categoryFilter: action.payload.category,
       };
     case SEARCH_POSTS_BEGIN:
       return {

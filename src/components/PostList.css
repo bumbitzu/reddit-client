@@ -1,13 +1,11 @@
-/* src/styles/PostList.css */
 
 .post-list {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Space between posts */
-  padding: 20px; /* Padding around the entire list */
+  gap: 20px;
+  padding: 20px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .post-list {
     gap: 15px;

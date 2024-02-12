@@ -1,6 +1,5 @@
-// src/components/PostItem.js
 import React from 'react';
-import './PostItem.css'; // Assuming CSS module or similar styling approach
+import './PostItem.css'; 
 import {marked} from 'marked';
 function PostItem({ title, summary, imageUrl })
 {
@@ -8,7 +7,7 @@ function PostItem({ title, summary, imageUrl })
   const getMarkdownText = (markdown) =>
   {
     if (!markdown)
-    { // Check if markdown content is null or undefined
+    {
       return { __html: '' }; // Return an empty string or some default value
     }
     var rawMarkup = marked(markdown, { sanitize: true });
@@ -19,7 +18,8 @@ function PostItem({ title, summary, imageUrl })
     <div className="post-item">
       <h2>{title}</h2>
       {imageUrl && <img src={imageUrl} alt={title} />}
-      {/* Use dangerouslySetInnerHTML only if you trust the source of the Markdown content */}
+
+      {/* Use only if you trust the source of the Markdown content */}
       <p dangerouslySetInnerHTML={getMarkdownText(summary)}></p>
     </div>
   );

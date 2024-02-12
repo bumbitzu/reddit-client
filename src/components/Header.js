@@ -1,13 +1,13 @@
-// src/components/Header.js
 import React from 'react';
-import './Header.css'; // Importing the CSS for styling
-
+import './Header.css'; 
+import logo from '../logo.png';
 function Header()
 {
   return (
     <header className="app-header">
-      <h1>Reddit Viewer</h1>
-      {/* Navigation or additional links could be added here */}
+      <img src={logo} className='logo' alt="logo"/>
+      <h1> Mini Reddit <span className='author'>by Bumbitzu</span></h1>
+      {/*TODO Navigation or additional links could be added here */}
     </header>
   );
 }

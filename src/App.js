@@ -1,10 +1,9 @@
-// src/App.js
 import React from 'react';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import CategoryFilter from './components/CategoryFilter';
 import VisiblePostList from './containers/VisiblePostList';
-import { fetchPosts, searchPosts, setCategoryFilter } from './redux/actions';
+import { fetchPosts, searchPosts} from './redux/actions';
 import { useDispatch } from 'react-redux';
 import './App.css';
 
@@ -24,7 +23,7 @@ function App()
 
   const handleCategoryChange = (category) =>
   {
-    dispatch(setCategoryFilter(category));
+    dispatch(fetchPosts(category));
   };
 
   return (
