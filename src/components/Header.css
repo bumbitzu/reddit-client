@@ -1,0 +1,15 @@
+/* src/styles/Header.css */
+
+.app-header {
+  background-color: #ff4500; /* Reddit's brand color, adjust as needed */
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px; /* Adjust based on your design */
+  font-weight: normal; /* Keeps it light, adjust as needed */
+}

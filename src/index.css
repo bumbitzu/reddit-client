@@ -1,13 +1,39 @@
-body {
+/* src/styles/index.css */
+
+body, html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Use a web-safe font or import a custom one */
+  background-color: #f0f2f5; /* Light grey background for slight contrast */
+  color: #333; /* Dark grey color for text for better readability */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app fills the whole viewport */
+}
+
+header {
+  background-color: #4267B2; /* Example: Facebook blue for header background */
+  color: white;
+  padding: 20px 40px; /* Adjust padding as needed */
+  text-align: center; /* Center the header content */
+}
+
+main {
+  flex: 1; /* Allows main content to grow and fill available space */
+  padding: 20px; /* Spacing around main content */
+}
+
+.search-and-filter {
+  display: flex;
+  justify-content: space-between; /* Space out search bar and filter options */
+  margin-bottom: 20px; /* Margin below the search/filter section */
+}
+
+@media (max-width: 768px) {
+  .search-and-filter {
+    flex-direction: column; /* Stack search and filter components on smaller screens */
+  }
 }

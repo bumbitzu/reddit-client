@@ -1,7 +1,12 @@
 .App {
+  width: 100%;
   text-align: center;
 }
-
+.postList{
+  margin: 0 auto;
+  width: 70%;
+  align-items: end;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

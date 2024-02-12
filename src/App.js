@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import Header from './components/Header';
+import SearchBar from './components/SearchBar';
+import CategoryFilter from './components/CategoryFilter';
+import VisiblePostList from './containers/VisiblePostList';
+import { fetchPosts, searchPosts, setCategoryFilter } from './redux/actions';
+import { useDispatch } from 'react-redux';
 import './App.css';
 
-function App() {
+function App()
+{
+  const dispatch = useDispatch();
+
+  React.useEffect(() =>
+  {
+    dispatch(fetchPosts()); // Fetch posts when the app loads
+  }, [ dispatch ]);
+
+  const handleSearch = (searchTerm) =>
+  {
+    dispatch(searchPosts(searchTerm));
+  }
+
+  const handleCategoryChange = (category) =>
+  {
+    dispatch(setCategoryFilter(category));
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="filters-container">
+        <SearchBar onSearch={handleSearch} />
+        <CategoryFilter onCategoryChange={handleCategoryChange} />
+      </div>
+      <div className='postList'>
+        <VisiblePostList />
+      </div>
     </div>
   );
 }

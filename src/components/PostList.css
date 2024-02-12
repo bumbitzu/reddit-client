@@ -1,0 +1,16 @@
+/* src/styles/PostList.css */
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between posts */
+  padding: 20px; /* Padding around the entire list */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .post-list {
+    gap: 15px;
+    padding: 10px;
+  }
+}
