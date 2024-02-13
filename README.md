@@ -6,8 +6,6 @@
 
 A modern, responsive Reddit client application built with React and Redux, enabling users to browse and interact with Reddit content in a more intuitive and efficient way. Utilizes the Reddit API to fetch the latest and most popular posts right to your device.
 
-![Reddit Client React-Redux Screenshot](link-to-application-screenshot)
-
 ## Key Features 🌟
 
 - Browse posts from different subreddits
@@ -18,8 +16,6 @@ A modern, responsive Reddit client application built with React and Redux, enabl
 
 - [React](https://reactjs.org/) for the UI
 - [Redux](https://redux.js.org/) for state management
-- [React Router](https://reactrouter.com/) for page navigation
-- [Axios](https://axios-http.com/) for HTTP requests to the Reddit API
 
 ## Installation and Running 🛠️
 
@@ -30,10 +26,23 @@ Follow these steps to run the application locally:
 git clone https://github.com/bumbitzu/reddit-client.git
 
 # Enter the project directory
-cd reddit-client-react-redux
+cd reddit-client
 
 # Install dependencies
 npm install
 
 # Run the application
 npm start
+```
+The application will be available at http://localhost:3000.
+
+## Contributions 🤝
+Contributions are always welcome! If you have a suggestion to improve this application, please open an issue or send a pull request.
+
+## License ⚖️
+Distributed under the MIT License.
+
+## Contact 📬
+contact@bumbitzu.ro
+
+The project is live on: https://bumbitzu.ro/projects/mini-reddit/
