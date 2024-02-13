@@ -27,7 +27,7 @@ Follow these steps to run the application locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/bumbitzu/reddit-client-react-redux.git
+git clone https://github.com/bumbitzu/reddit-client.git
 
 # Enter the project directory
 cd reddit-client-react-redux
